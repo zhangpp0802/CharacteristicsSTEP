@@ -1,0 +1,108 @@
+
+# basic greeting here
+[randomly]
+Greet ?who: Hello, ?who.
+Greet ?who: Hey, ?who.
+Greet ?who: Good morning, ?who.
+
+# bartender info
+[randomly]
+SuitColor: walnut
+SuitColor: wood
+SuitColor: Carob
+SuitColor: Brunette
+SuitColor: Mocha
+SuitColor: Umber
+
+[randomly]
+BartenderCloth: a lovely black on black combination
+BartenderCloth: a nice walnut color suit
+BartenderCloth: a Haiwai style short sleeves shirt
+
+[randomly]
+BartenderCaller: fox
+BartenderCaller: boy
+BartenderCaller: man
+BartenderCaller: old man
+BartenderCaller: buddy
+
+# bar info
+[randomly]
+BarName: Three Dots and a Dash
+BarName: Kumiko
+BarName: Delilah's Chicago
+BarName: Berlin
+BarName: The Gage
+
+[randomly]
+AskForDrink: A whiskey, [BartenderCaller]!
+AskForDrink: Hey [BartenderCaller], can you bring me a bourbon plz?
+AskForDrink: [BartenderCaller], Whiskey on the rock plz!
+
+[randomly]
+Seat: left corner of the room
+Seat: in the middle of the room
+Seat: at bar
+Seat: a table right next to a party of people
+
+[randomly]
+RespondDrinkPos: is fucking awesome
+RespondDrinkPos: taste good as it smells
+RespondDrinkPos: is the best
+RespondDrinkPos: is right on my drinking mood
+
+# metaphor comb1
+[randomly]
+MetaphorNoun11: my tongue
+MetaphorNoun11: my throat
+MetaphorNoun11: my teeth
+
+[randomly]
+MetaphorVerb1: stepping on
+MetaphorVerb1: rubbing
+MetaphorVerb1: placed at
+
+[randomly]
+MetaphorNoun12: a thousand of knives
+MetaphorNoun12: a not flushed toilet
+MetaphorNoun12: a motel toothbrush
+
+# metaphor comb2
+[randomly]
+MetaphorNoun21: my stomache
+MetaphorNoun21: my internal organs
+MetaphorNoun21: my jejunum and illeum
+
+[randomly]
+MetaphorVerb2: involving into
+MetaphorVerb2: bunching up at
+MetaphorVerb2: starting
+
+[randomly]
+MetaphorNoun22: a melee
+MetaphorNoun22: a riot
+MetaphorNoun22: a nuclear war
+
+[randomly]
+Metaphor: [MetaphorNoun11] [MetaphorVerb1] [MetaphorNoun12]
+Metaphor: [MetaphorNoun21] [MetaphorVerb2] [MetaphorNoun22]
+
+[randomly]
+RespondDrinkNeg: is fucking burning my throat
+RespondDrinkNeg: is like [Metaphor]
+RespondDrinkNeg: is smashing my mood
+RespondDrinkNeg: ruins the day
+
+RespondDrink ?mood: [PosMood ?mood] It [RespondDrinkPos]!
+RespondDrink ?mood: [NegMood ?mood] It [RespondDrinkNeg]!
+
+ABar ?name ?style: ?name is a ?style bar.
+
+Scene: 
+[Greet "Player"] You are entering [BarName]. 
+You can see a bartender wearing[BartenderCloth]. 
+He is mixing cocktail and you feel like you want to sit at [Seat] and have a drink here. 
+"[AskForDrink]", you said to the bartender.
+After a sip of the drink, [Emotional excited]
+You then shouted out "[RespondDrink excited]"
+[end]

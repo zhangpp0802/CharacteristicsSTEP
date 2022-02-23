@@ -1,0 +1,99 @@
+Character rick.
+AgeOf rick: 70
+Gender rick: male
+GivenName rick: Rick
+FamName rick: Sanchez
+
+Character morty.
+AgeOf morty: 14
+Gender morty: male
+GivenName morty: Morty
+FamName morty: Smith
+
+Character beth.
+AgeOf beth: 33
+Gender beth: female
+GivenName beth: Beth
+FamName beth: Sanchez
+
+Character jerry.
+AgeOf jerry: 33
+Gender jerry: male
+GivenName jerry: Jerry
+FamName jerry: Smith
+
+Character summer.
+AgeOf summer: 17
+Gender summer: female
+GivenName summer: Summer
+FamName summer: Smith
+
+Character birdperson.
+AgeOf birdperson: no reference
+Gender birdperson: male
+GivenName birdperson: Bird
+FamName birdperson: person
+
+# family relationship
+[predicate]
+GrandsonOf rick morty.
+[predicate]
+GranddaughterOf rick summer.
+[predicate]
+GrandfatherOf morty rick.
+GrandfatherOf summer rick.
+[predicate]
+DaughterOf beth summer.
+DaughterOf jerry summer.
+DaughterOf rick beth.
+[predicate]
+SonOf rick jerry.
+SonOf jerry morty.
+SonOf beth morty.
+[predicate]
+MotherOf summer beth.
+MotherOf morty beth.
+[predicate]
+FatherOf jerry rick.
+FatherOf beth rick.
+FatherOf morty jerry.
+FatherOf summer jerry.
+[predicate]
+HusbandOf beth jerry.
+[predicate]
+WifeOf jerry beth.
+[predicate]
+FriendOf rick birdperson.
+FriendOf birdperson rick.
+[predicate]
+SisterOf morty summer.
+[predicate]
+BrotherOf summer morty.
+[predicate]
+OtherOf birdperson beth.
+OtherOf birdperson jerry.
+OtherOf birdperson summer.
+OtherOf birdperson morty.
+OtherOf beth birdperson.
+OtherOf jerry birdperson.
+OtherOf summer birdperson.
+OtherOf morty birdperson.
+
+Talk ?who ?talktowho: [GrandsonOf ?who ?talktowho] You should not doing your homework, they are useless!
+Talk ?who ?talktowho: [GranddaughterOf ?who ?talktowho] Not talking to you, girl!
+Talk ?who ?talktowho: [GrandfatherOf ?who ?talktowho] Let's go to boots world!
+Talk ?who ?talktowho: [GrandfatherOf ?who ?talktowho] Let's go to boots world!
+Talk ?who ?talktowho: [DaughterOf ?who ?talktowho] No instagram today girl!
+Talk ?who ?talktowho: [SonOf ?who ?talktowho] Do some work buddy!
+Talk ?who ?talktowho: [MotherOf ?who ?talktowho] Mom, plz....
+Talk ?who ?talktowho: [FatherOf ?who ?talktowho] Look ?talktowho/GivenName ....
+Talk ?who ?talktowho: [HusbandOf ?who ?talktowho] I think we should take a break.....up.
+Talk ?who ?talktowho: [WifeOf ?who ?talktowho] Love you sweetie.
+Talk ?who ?talktowho: [FriendOf ?who ?talktowho] Oh ?talktowho/GivenName, I know you the best.
+Talk ?who ?talktowho: [SisterOf ?who ?talktowho] Fuck you,?talktowho/GivenName!
+Talk ?who ?talktowho: [BrotherOf ?who ?talktowho] Fuck you,?talktowho/GivenName!
+Talk ?who ?talktowho: [OtherOf ?who ?talktowho] Nice meeting you, ?talktowho/GivenName.
+
+
+HasWife ?human: [HusbandOf ?Character ?human] ?human/GivenName ?human/FamName do have a wife who is ?Character/GivenName ?Character/FamName.
+HasChild ?human: [HusbandOf ?Character ?human] ?human/GivenName ?human/FamName do have a wife who is ?Character/GivenName ?Character/FamName.

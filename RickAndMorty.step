@@ -1,0 +1,38 @@
+NameGiven ?n: ?n
+AgeGiven ?a: ?a
+
+[randomly]
+WorldsToGo: Boots World
+WorldsToGo: Microverse
+WorldsToGo: Purge Planet
+WorldsToGo: Rick's Toilet Planet
+WorldsToGo: Unity’s Planet
+WorldsToGo: Resort Planet
+WorldsToGo: Gazorpazorp
+WorldsToGo: Pluto
+WorldsToGo: Planet Squanch
+WorldsToGo: Post-Apocalyptic Earth
+
+Describe ?who ?age: 
+[NameGiven ?who] is [AgeGiven ?age] years old.
+[end]
+
+Character rick.
+AgeOf rick: 70
+GivenName rick: Rick
+
+Character morty.
+AgeOf morty: 14
+GivenName morty: Morty
+
+GrandpaOf ?grand ?kid: ?grand is ?kid grandpapa.
+Grandpa (Character ?who): ?who/GivenName is grandpapa. ?who/GivenName is ?who/AgeOf years old.
+Kido (Character ?who): ?who/GivenName is a kido. ?who/GivenName is ?who/AgeOf years old.
+
+
+Gen2Person: [Describe "Rick" "70"] [Describe "Morty" "14"] [GrandpaOf "Rick" "Morty"]
+
+[main]
+DescribeRM: [Grandpa rick] [Kido morty]
+HaveFun: Hey Morty, let's go to [WorldsToGo]!
+GeneratePlay: [DescribeRM] [HaveFun]

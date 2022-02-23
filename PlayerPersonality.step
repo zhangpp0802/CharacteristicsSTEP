@@ -1,0 +1,62 @@
+[randomly]
+Name: Mr.Pink
+Name: Rick
+Name: Mr.ODB
+Name: NinjaFace
+
+[randomly]
+Age: 80
+Age: 63
+Age: 40
+Age: 22
+Age: 14
+Age: 3
+
+[randomly]
+Personality: rude
+Personality: nice
+Personality: love to kill
+Personality: fear of talking to female
+Personality: chill
+Personality: fearless
+Personality: embarrissing
+Personality: social anxious
+Personality: hard-working
+
+[randomly]
+Job: computer engineer
+Job: marketing manager
+Job: construction field worker
+Job: bartender
+Job: office man
+Job: politician
+Job: freelancer
+
+[predicate]
+PosMood happy.
+PosMood excited.
+PosMood gratitude.
+PosMood pride.
+PosMood content.
+PosMood empowered.
+PosMood elated.
+
+[predicate]
+NegMood depressed.
+NegMood upset.
+NegMood embarrased.
+NegMood alone.
+NegMood angry.
+NegMood ashamed.
+NegMood belittled.
+NegMood anxious.
+NegMood emotional.
+
+[randomly]
+Relationship: family
+Relationship: friendship
+Relationship: acquaintances
+Relationship: romantic
+Relationship: sexual
+Relationship: work
+Relationship: situational

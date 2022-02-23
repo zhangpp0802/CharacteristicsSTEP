@@ -1,0 +1,42 @@
+[main]
+[Hello]
+[Sentence]
+Family ?NameGiven: [FamRelation ?]
+
+Describe ?who:
+[Write "The"] [Role ?who] [Write ","] [Mention ?who] [Write ", is a"]
+[Age ?who] [Gender ?who] [Write "with"] [SalientDetail ?who] [Write "."] [Mention ?who]
+[Write "regards you intently."]
+[end]
+
+Describe Morty:
+[NameGiven "Morty"] [AgeGiven "14"]
+[end]
+
+RelationshipGiven ?r ?p1 ?p2:
+
+[predicate]
+Human Rick
+Human Smith
+Human Morty
+
+[predicate]
+FamRelation ?Human ?Human
+FamRelation Rick Morty
+FamRelation Smith Morty
+
+initially:
+[DefineRelation "Relationship" Relationship PersonType]
+[end]
+
+[predicate]
+Relationships fatherOf.
+Relationships motherOf.
+Relationships sonOf.
+Relationships daughterOf.
+Relationships grandpaOf.
+Relationships grandsonOf.
+Relationships granddaughterOf.
+Relationships friendOf.
+Relationships husbandOf.
+Relationships wifeOf.

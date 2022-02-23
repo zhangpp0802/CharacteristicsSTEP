@@ -1,0 +1,22 @@
+Character rick.
+AgeOf rick: 70
+Gender rick: male
+GivenName rick: Rick
+FamName rick: Sanchez
+
+Character morty.
+AgeOf morty: 14
+Gender morty: male
+GivenName morty: Morty
+FamName morty: Smith
+
+Args lose_imagination: lose imagination
+Args too_much_stress: too much stress
+Args no_time: no time to do other stuff that actually interest them
+
+[predicate]
+Believes rick homework_is_bad.
+
+HomeworkIsBad ?who:
+[Believes ?who homework_is_bad] ?who/GivenName ?who/FamName believes that homework is bad for students due to the reasons of [Args lose_imagination], [Args too_much_stress], [Args no_time].
+[end]
